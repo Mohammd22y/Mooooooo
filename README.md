@@ -1,176 +1,131 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>خدمة شحن الألعاب - ببجي</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      margin: 0;
-      padding: 0;
-      direction: rtl;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - فيسبوك</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    header {
-      background-color: #2c3e50;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+        .login-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .container {
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        .login-box {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
 
-    .package {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      margin: 15px;
-      padding: 20px;
-      text-align: center;
-      border-radius: 8px;
-      width: 250px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-    .package:hover {
-      transform: scale(1.05);
-    }
+        .textbox {
+            margin-bottom: 15px;
+        }
 
-    .package h2 {
-      color: #2c3e50;
-      font-size: 1.8rem;
-    }
+        .textbox input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
 
-    .package p {
-      font-size: 1.2rem;
-      color: #7f8c8d;
-      margin: 10px 0;
-    }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-    .package .price {
-      font-size: 1.5rem;
-      color: #e74c3c;
-      font-weight: bold;
-    }
+        input[type="submit"]:hover {
+            background-color: #166fe5;
+        }
 
-    .package .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #3498db;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+        p {
+            font-size: 14px;
+            color: #666;
+        }
 
-    .package .btn:hover {
-      background-color: #2980b9;
-    }
+        a {
+            color: #1877f2;
+            text-decoration: none;
+        }
 
-    .payment-form {
-      background-color: #fff;
-      padding: 20px;
-      margin-top: 30px;
-      border-radius: 8px;
-      width: 100%;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+        .signup-link {
+            margin-top: 20px;
+        }
 
-    .payment-form input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+        /* لوغو فيسبوك */
+        .facebook-logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
 
-    .payment-form button {
-      background-color: #2ecc71;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      width: 100%;
-      cursor: pointer;
-    }
-
-    .payment-form button:hover {
-      background-color: #27ae60;
-    }
-
-    footer {
-      background-color: #2c3e50;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    </style>
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <h1>خدمة شحن الألعاب - ببجي</h1>
-    <p>قم بشحن حسابك بباقات مختلفة وبأسعار مميزة!</p>
-  </header>
-
-  <!-- Packages Section -->
-  <div class="container">
-    <!-- Package 325 UC -->
-    <div class="package">
-      <h2>باقة 325 UC</h2>
-      <p>شحن 325 UC للعبة ببجي</p>
-      <p class="price">45,000 ليرة سورية</p>
-      <a href="https://example.com/325uc" class="btn" target="_blank">اشترِ الآن</a>
+    <div class="login-container">
+        <div class="login-box">
+            <!-- إضافة الشعار -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="facebook-logo">
+            <h2>تسجيل الدخول إلى فيسبوك</h2>
+            <form action="#" id="loginForm">
+                <div class="textbox">
+                    <input type="email" placeholder="البريد الإلكتروني أو رقم الهاتف" id="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="كلمة السر" id="password" required>
+                </div>
+                <input type="submit" value="تسجيل الدخول">
+            </form>
+            <p>هل نسيت كلمة السر؟ <a href="#">استعادة كلمة السر</a></p>
+            <div class="signup-link">
+                <p>ليس لديك حساب؟ <a href="#">إنشاء حساب</a></p>
+            </div>
+        </div>
     </div>
-    <!-- Package 600 UC -->
-    <div class="package">
-      <h2>باقة 600 UC</h2>
-      <p>شحن 600 UC للعبة ببجي</p>
-      <p class="price">90,000 ليرة سورية</p>
-      <a href="https://example.com/600uc" class="btn" target="_blank">اشترِ الآن</a>
-    </div>
-  </div>
 
-  <!-- Payment Form -->
-  <div class="payment-form">
-    <h2>إتمام الدفع عبر سيريتل</h2>
-    <form action="your_payment_processing_script.php" method="POST">
-      <label for="seritel-number">رقم سيريتل</label>
-      <input type="text" id="seritel-number" name="seritel_number" value="96854275" readonly>
-      
-      <label for="customer-id">ID العميل</label>
-      <input type="text" id="customer-id" name="customer_id" placeholder="أدخل ID العميل" required>
+    <script>
+        document.querySelector('#loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
 
-      <button type="submit">إتمام الدفع</button>
-    </form>
-  </div>
+            const email = document.querySelector('#email').value;
+            const password = document.querySelector('#password').value;
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 جميع الحقوق محفوظة</p>
-  </footer>
-
+            if (!email || !password) {
+                alert('يرجى ملء جميع الحقول');
+            } else {
+                alert('تم تسجيل الدخول بنجاح');
+            }
+        });
+    </script>
 </body>
 </html>
